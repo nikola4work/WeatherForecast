@@ -27,7 +27,7 @@ User story - As a travele you want to see the weather outlook for multiple citie
 
 <img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%201.png" height="250" width="450">
 
-<img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%202.png" height="250 width="450">
+<img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%202.png" height="250" width="450">
 
 
 
