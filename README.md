@@ -1,9 +1,6 @@
 # WeatheForecast
 
-# WeatherDashboard
-
-
-#### WeatherDashboard-Repo, 12/15/19
+#### WeatherForecast-Repo, 12/15/19
 
 #### By Nikola Jovanovic
 
