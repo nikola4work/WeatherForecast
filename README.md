@@ -25,9 +25,9 @@ User story - As a travele you want to see the weather outlook for multiple citie
 ## Screenshots
 
 
-<img src="" height="250" width="450">
+<img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%201.png" height="250" width="450">
 
-<img src="" height="250 width="450">
+<img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%202.png" height="250 width="450">
 
 
 
@@ -36,7 +36,7 @@ User story - As a travele you want to see the weather outlook for multiple citie
 ## Setup/Installation Requirements
 
 * Clone this repository to your local machine if you wish to edit
-* For live preview navigate to the  
+* For live preview navigate to the https://nikola4work.github.io/WeatheForecast/
 
 
 
