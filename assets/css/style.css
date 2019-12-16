@@ -1,177 +1,380 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-    max-height: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    font-family: "Flavors", cursive;
-    font-family: "Tillana", cursive;
-}
-
-#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.jumbotron {
-    max-width: 100%;
-    max-height: 100%;
-    display: flex;
-}
-
-.title {
-    position: fixed;
-    top: 0%;
-    left: 30%;
-    display: flex;
-    font-size: 100px;
-    font-family: "Cookie";
-    text-shadow: 15px 6px 11px #000000;
-    color: #eef0f0;
-}
-
-#search-container {
-    position: absolute;
-    left: 40%;
-    top: 100%;
-    min-width: 25vw;
-    text-transform: capitalize;
-}
-
-#searchBox {
-    padding-left: 5px;
-    min-width: 15vw;
-    max-width: 5vw;
-    max-height: 10vh;
-    background: transparent;
-    border-radius: 100px;
-    animation-delay: 1.2s;
-    border: none;
-    font-size: 25px;
-    text-transform: capitalize;
-}
-
-#searchBox:focus {
-    border: none;
-    outline: none;
-}
-
-.created-city {
-    cursor: pointer;
-}
-
-.card {
-    position: absolute;
-    top: 300px;
-    opacity: 0.72;
-    min-width: 5vw;
-    animation-delay: 600ms;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-}
-
-#main-figure {
-    top: 75%;
-    left: 38%;
-    margin-right: -50%;
-    position: absolute;
-    background-color: white;
-    opacity: 0.72;
-    border-radius: 3px;
-    text-align: center;
-}
-
-.day-text {
-    position: absolute;
-    bottom: -10px;
-    left: 40%;
-    margin: 20px;
-    font-family: "Cookie";
-    text-shadow: 15px 6px 11px #000000;
-    color: #eef0f0;
-    font-size: 45px;
-}
-
-.ul-container {
-    top: 420px;
-    position: absolute;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#ul-5day li {
-    font-size: 1.2rem;
-    flex-wrap: wrap;
-    margin: 8px auto;
-    width: 150px;
-    max-height: 180px;
-    background: white;
-    opacity: 0.8;
-    border-radius: 3px;
-}
-
-#search-btn {
-    font-size: 1rem;
-    position: absolute;
-    right: 5px;
-    top: 15px;
-    background: transparent;
-    color: royalblue;
-    border-radius: 50%;
-    transition: transform 0.2s;
-}
-
-#search-btn:hover {
-    transform: scale(1.1);
-}
-
-#search-btn:focus {
-    outline: none;
-}
-
-.clr-btn {
-    align-self: center;
-    background-color: #438399;
-    color: white;
-    width: 90px;
-    height: 30px;
-    border-radius: 5px;
-    margin: 5px;
-    transition: transform 0.2s;
-}
-
-.clr-btn:hover {
-    transform: scale(1.1);
-}
-
-.city-name,
-.date,
-.humidity,
-.current-temp,
-.wind-speed {
-    margin: 10px;
-    color: black;
-}
-
-.created-city {
-    text-align: center;
-}
-
-#ul-5day {
-    bottom: 50%;
-    position: absolute;
-    text-align: center;
-    color: black;
-    font-size: 1.3rem;
-}
-
-#daily-icon {
-    width: 50px;
-}
+                        html,
+                        body {
+                            margin: 0;
+                            padding: 0;
+                            max-height: 100%;
+                            max-width: 100%;
+                            box-sizing: border-box;
+                            font-family: "Flavors", cursive;
+                            font-family: "Tillana", cursive;
+                        }
+                        /* video */
+                        
+                        #myVideo {
+                            position: fixed;
+                            right: 0;
+                            bottom: 0;
+                            min-width: 100%;
+                            min-height: 100%;
+                        }
+                        /* header */
+                        
+                        .jumbotron {
+                            max-width: 100%;
+                            max-height: 100%;
+                            display: flex;
+                        }
+                        
+                        .title {
+                            position: fixed;
+                            top: 0%;
+                            left: 30%;
+                            display: flex;
+                            font-size: 100px;
+                            font-family: "Cookie";
+                            text-shadow: 15px 6px 11px #000000;
+                            color: #eef0f0;
+                        }
+                        /* search box */
+                        
+                        #search-container {
+                            position: absolute;
+                            left: 40%;
+                            top: 100%;
+                            min-width: 25vw;
+                            text-transform: capitalize;
+                        }
+                        
+                        #searchBox {
+                            padding-left: 5px;
+                            min-width: 15vw;
+                            max-width: 5vw;
+                            max-height: 10vh;
+                            background: transparent;
+                            border-radius: 100px;
+                            animation-delay: 1.2s;
+                            border: none;
+                            font-size: 25px;
+                            text-transform: capitalize;
+                        }
+                        
+                        #searchBox:focus {
+                            border: none;
+                            outline: none;
+                        }
+                        
+                        .created-city {
+                            cursor: pointer;
+                        }
+                        /* search container */
+                        
+                        .card {
+                            position: absolute;
+                            top: 300px;
+                            opacity: 0.72;
+                            min-width: 5vw;
+                            animation-delay: 600ms;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            margin: 0 auto;
+                        }
+                        /* current day forecast */
+                        
+                        #main-figure {
+                            top: 75%;
+                            left: 38%;
+                            margin-right: -50%;
+                            position: absolute;
+                            background-color: white;
+                            opacity: 0.72;
+                            border-radius: 3px;
+                            text-align: center;
+                        }
+                        /* 5 day text */
+                        
+                        .day-text {
+                            position: absolute;
+                            bottom: -10px;
+                            left: 40%;
+                            margin: 20px;
+                            font-family: "Cookie";
+                            text-shadow: 15px 6px 11px #000000;
+                            color: #eef0f0;
+                            font-size: 45px;
+                        }
+                        /* styling for 5 day weather display */
+                        
+                        .ul-container {
+                            top: 420px;
+                            position: absolute;
+                            list-style: none;
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        
+                        #ul-5day li {
+                            font-size: 1.2rem;
+                            flex-wrap: wrap;
+                            margin: 8px auto;
+                            width: 150px;
+                            max-height: 180px;
+                            background: white;
+                            opacity: 0.8;
+                            border-radius: 3px;
+                        }
+                        /* search button */
+                        
+                        #search-btn {
+                            font-size: 1rem;
+                            position: absolute;
+                            right: 5px;
+                            top: 15px;
+                            background: transparent;
+                            color: royalblue;
+                            border-radius: 50%;
+                            transition: transform 0.2s;
+                        }
+                        
+                        #search-btn:hover {
+                            transform: scale(1.1);
+                        }
+                        
+                        #search-btn:focus {
+                            outline: none;
+                        }
+                        /* clear button */
+                        
+                        .clr-btn {
+                            align-self: center;
+                            background-color: #438399;
+                            color: white;
+                            width: 90px;
+                            height: 30px;
+                            border-radius: 5px;
+                            margin: 5px;
+                            transition: transform 0.2s;
+                        }
+                        
+                        .clr-btn:hover {
+                            transform: scale(1.1);
+                        }
+                        /* 5 day weather styling */
+                        
+                        .city-name,
+                        .date,
+                        .humidity,
+                        .current-temp,
+                        .wind-speed {
+                            margin: 10px;
+                            color: black;
+                        }
+                        
+                        .created-city {
+                            text-align: center;
+                        }
+                        
+                        #ul-5day {
+                            bottom: 50%;
+                            position: absolute;
+                            text-align: center;
+                            color: black;
+                            font-size: 1.3rem;
+                        }
+                        
+                        #daily-icon {
+                            width: 50px;
+                        }
+                        /* MEDIA QUERIE */
+                        
+                        @media screen and (max-width:1129px) {
+                            #search-container {
+                                position: absolute;
+                                width: 200px;
+                                margin-left: 40px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:1124px) {
+                            #search-container {
+                                position: absolute;
+                                width: 300px;
+                                margin-left: 40px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:900px) {
+                            #search-container {
+                                position: absolute;
+                                width: 350px;
+                                margin-left: -10px;
+                            }
+                            .example {
+                                margin-left: -15px;
+                                width: 300px;
+                            }
+                             ::placeholder {
+                                font-size: 22px;
+                                padding-left: -20px;
+                            }
+                            #myVideo {
+                                position: fixed;
+                                right: 0;
+                                bottom: 0;
+                                min-width: 100%;
+                                min-height: 100%;
+                            }
+                            .title {
+                                margin-left: -80px;
+                            }
+                            #main-figure {
+                                margin-left: 50px;
+                            }
+                            .day-text {
+                                margin-left: 80px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:768px) {
+                            #search-container {
+                                position: absolute;
+                                width: 270px;
+                                margin-left: -10px;
+                            }
+                            .example {
+                                margin-left: -15px;
+                                width: 300px;
+                            }
+                             ::placeholder {
+                                font-size: 18px;
+                                padding-left: -20px;
+                            }
+                            #myVideo {
+                                position: fixed;
+                                right: 0;
+                                bottom: 0;
+                                min-width: 100%;
+                                min-height: 100%;
+                            }
+                            .title {
+                                margin-left: -130px;
+                            }
+                            #main-figure {
+                                margin-left: 50px;
+                            }
+                            .day-text {
+                                margin-left: 80px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:600px) {
+                            #search-container {
+                                position: absolute;
+                                width: 200px;
+                                margin-left: -10px;
+                            }
+                            .example {
+                                margin-left: -15px;
+                                font-size: 25px;
+                            }
+                             ::placeholder {
+                                font-size: 15px;
+                            }
+                            #myVideo {
+                                position: fixed;
+                                right: 0;
+                                bottom: 0;
+                                min-width: 100%;
+                                min-height: 100%;
+                            }
+                            .title {
+                                font-size: 80px;
+                            }
+                            #main-figure {
+                                margin-left: 40px;
+                            }
+                            .day-text {
+                                margin-left: -50px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:480px) {
+                            #search-container {
+                                margin-top: 20px;
+                            }
+                            .example {
+                                margin-left: -10px;
+                                font-size: 18px;
+                            }
+                             ::placeholder {
+                                font-size: 12px;
+                            }
+                            #myVideo {
+                                position: fixed;
+                                right: 0;
+                                bottom: 0;
+                                min-width: 100%;
+                                min-height: 100%;
+                                background-size: cover;
+                            }
+                            .title {
+                                font-size: 60px;
+                                margin-left: -70px;
+                                width: 100%;
+                            }
+                            #main-figure {
+                                margin-left: -175px;
+                                margin-top: 300px;
+                                width: 100%;
+                            }
+                            .day-text {
+                                margin-left: -50px;
+                            }
+                            #ul-5day {
+                                margin-top: 250px;
+                            }
+                            body {
+                                max-width: 480px;
+                            }
+                            #searchBox {
+                                font-size: 20px;
+                            }
+                        }
+                        
+                        @media screen and (max-width:320px) {
+                            #search-container {
+                                margin-top: 100px;
+                            }
+                            .example {
+                                margin-left: -10px;
+                                font-size: 18px;
+                            }
+                             ::placeholder {
+                                font-size: 12px;
+                            }
+                            #myVideo {
+                                position: fixed;
+                                right: 0;
+                                bottom: 0;
+                                min-width: 100%;
+                                min-height: 100%;
+                            }
+                            .title {
+                                font-size: 60px;
+                                margin-left: -70px;
+                                width: 100%;
+                            }
+                            #main-figure {
+                                margin-left: -112px;
+                                margin-top: 400px;
+                            }
+                            .day-text {
+                                margin-left: -72px;
+                            }
+                            #ul-5day {
+                                margin-top: 450px;
+                            }
+                            #searchBox {
+                                font-size: 20px;
+                            }
+                        }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--THIS LINK CONVERTS WEATHER API HTTP TO HTTPS - SO THAT WEBPAGE COULD BE LIVE-->
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -39,14 +41,14 @@
         </video>
         </div>
 
-        <div class="container col-12" id="title">
+        <div class="container col-md-12" id="title">
             <h1 class="title">Weather Dashboard</h1>
         </div>
 
         <div id="search-container" class="card animated flipInX">
             <div class="card-header">
                 <form class="example " action="" autocomplete="off">
-                    <input id="searchBox" type="text" placeholder="Enter A City.." name="search" />
+                    <input id="searchBox" type="text" placeholder="Enter A City" name="search" />
                     <button id="search-btn" type="submit">
               <i class="fa fa-search"></i>
             </button>
