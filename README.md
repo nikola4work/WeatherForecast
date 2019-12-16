@@ -55,6 +55,8 @@ JavaScript
 
 JQuery
 
+Media Query
+
 3rd party API
 
 
