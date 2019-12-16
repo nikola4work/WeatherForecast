@@ -25,7 +25,8 @@ $(document).ready(function() {
                 .prev()
                 .val(); //getting value of user input
         }
-        $(".figure").empty(); //empty search results upon each new search
+        $(".figure").empty();
+        //empty search results upon each new search
         $("#search-container").animate({ left: "10px" }, 600);
         $("#search-container").animate({ top: "10px" }, 600);
         $(".ul-container").css("display", "flex");
@@ -65,7 +66,7 @@ $(document).ready(function() {
                 .text(`Humidity: ${response.main.humidity}%`);
             var windSpeed = $("<h4>")
                 .addClass("wind-speed")
-                .text(`Wind Speed ${response.wind.speed} mph`);
+                .text(`Wind Speed: ${response.wind.speed} mph`);
             //Appending the values to the figure box
             $(".figure").append(
                 city,
@@ -141,7 +142,7 @@ $(document).ready(function() {
         });
     }
 
-    //-------------------------Local Storage-----------//
+    // local storage
     var ul = $("#cityList");
     var itemsArray = localStorage.getItem("items") ?
         JSON.parse(localStorage.getItem("items")) :
@@ -153,6 +154,8 @@ $(document).ready(function() {
         li.text(text);
         ul.prepend(li);
     };
+
+    // search city button
     $("#search-btn").click(function() {
         itemsArray.push(userInput);
         localStorage.setItem("items", JSON.stringify(itemsArray));
@@ -166,9 +169,17 @@ $(document).ready(function() {
         console.log(item);
         $("#main-figure").animate({ top: "10px" }, 600);
     });
+
+    // clear button
     $(".clr-btn").on("click", function() {
         $(".created-city").remove();
         localStorage.clear();
         $("input").empty();
+        $("#cityList").empty();
+    });
+
+    // remove title when local storage is city is clicked
+    $(".created-city").click(function() {
+        $(".title").remove();
     });
 });
