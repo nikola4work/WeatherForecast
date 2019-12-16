@@ -30,7 +30,7 @@ $(document).ready(function() {
         $("#search-container").animate({ top: "10px" }, 600);
         $(".ul-container").css("display", "flex");
         var queryURL =
-            "http://api.openweathermap.org/data/2.5/weather?q=" +
+            "https://api.openweathermap.org/data/2.5/weather?q=" +
             userInput +
             "&APPID=" +
             myKey;
@@ -52,7 +52,9 @@ $(document).ready(function() {
                 .addClass("icon-image")
                 .attr(
                     "src",
-                    "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png"
+                    "https://openweathermap.org/img/w/" +
+                    response.weather[0].icon +
+                    ".png"
                 );
             var tempF = parseInt((response.main.temp - 273.15) * 1.8 + 32); //kelvin to farenheight Conversion
             var temperature = $("<h4>")
@@ -142,7 +144,8 @@ $(document).ready(function() {
     //-------------------------Local Storage-----------//
     var ul = $("#cityList");
     var itemsArray = localStorage.getItem("items") ?
-        JSON.parse(localStorage.getItem("items")) : [];
+        JSON.parse(localStorage.getItem("items")) :
+        [];
     var data = JSON.parse(localStorage.getItem("items"));
 
     var liMaker = text => {
