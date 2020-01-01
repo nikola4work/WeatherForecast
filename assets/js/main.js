@@ -17,7 +17,7 @@ $(document).ready(function() {
         event.preventDefault();
         //will target the value of the user userInput or the saved list
         if ($(this).attr("id") === "cityList") {
-            let x = event.target;
+            var x = event.target;
             userInput = $(x).text();
             console.log(userInput);
         } else {
@@ -35,7 +35,8 @@ $(document).ready(function() {
             userInput +
             "&APPID=" +
             myKey;
-        //calling the API
+
+        //calling the API for current day
         $.ajax({
             url: queryURL,
             method: "GET"
@@ -57,6 +58,7 @@ $(document).ready(function() {
                     response.weather[0].icon +
                     ".png"
                 );
+
             var tempF = parseInt((response.main.temp - 273.15) * 1.8 + 32); //kelvin to farenheight Conversion
             var temperature = $("<h4>")
                 .addClass("current-temp")
@@ -67,6 +69,7 @@ $(document).ready(function() {
             var windSpeed = $("<h4>")
                 .addClass("wind-speed")
                 .text(`Wind Speed: ${response.wind.speed} mph`);
+
             //Appending the values to the figure box
             $(".figure").append(
                 city,
@@ -78,6 +81,7 @@ $(document).ready(function() {
             );
         });
     }
+
     //end current day call begin Five day forecast call
     function fiveDayForecast() {
         if ($(this).attr("id") === "cityList") {
@@ -161,21 +165,8 @@ $(document).ready(function() {
         localStorage.setItem("items", JSON.stringify(itemsArray));
         liMaker(userInput);
         $(".title").remove();
-        $("#main-figure").animate({ top: "10px" }, 600);
-    });
 
-    data.forEach(item => {
-        liMaker(item);
-        console.log(item);
         $("#main-figure").animate({ top: "10px" }, 600);
-    });
-
-    // clear button
-    $(".clr-btn").on("click", function() {
-        $(".created-city").remove();
-        localStorage.clear();
-        $("input").empty();
-        $("#cityList").empty();
     });
 
     // remove title when local storage is city is clicked
