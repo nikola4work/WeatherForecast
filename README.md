@@ -1,4 +1,4 @@
-# WeatheForecast
+# WeatherForecast
 
 #### WeatherForecast-Repo, 12/15/19
 
