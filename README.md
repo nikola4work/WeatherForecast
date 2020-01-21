@@ -20,16 +20,14 @@ User story - As a travele you want to see the weather outlook for multiple citie
 - at the bottom of the screen user will see a 5-day forecast based on his previous search.
 - Search history based on the user input will be saved, and the user can remove it by clicking the clear button.
 
-## Screenshots
+## Live Preview
 
-<img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%201.png" height="250" width="450">
-
-<img src="https://github.com/nikola4work/WeatheForecast/blob/master/assets/images/readme%20pic%202.png" height="250" width="450">
+<img src="https://github.com/nikola4work/WeatherForecast/blob/master/assets/images/gif.gif">
 
 ## Setup/Installation Requirements
 
 - Clone this repository to your local machine if you wish to edit
-- For live preview navigate to the https://nikola4work.github.io/WeatherForecast/
+- Direct link to site https://nikola4work.github.io/WeatherForecast/
 
 ## Support and contact details
 
