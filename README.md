@@ -18,7 +18,7 @@ User story - As a travele you want to see the weather outlook for multiple citie
 - weather information for that day will be displayed
 - an animated search box will move from the middle of the screen to top left corner
 - at the bottom of the screen user will see a 5-day forecast based on his previous search.
-- Search history based on the user input will be saved, and the user can remove it by clicking the clear button.
+- Search history based on the user input will be saved.
 
 ## Live Preview
 
